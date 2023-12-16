@@ -1,0 +1,82 @@
+.services-page header,
+.about-page header {
+	height: 50vh;
+}
+
+.services-page .services-section-row {
+	gap: 20px;
+}
+
+.services-page .services-section-row:nth-child(even) .services-section-item:first-child {
+	order:2;
+}
+
+
+/*----- ABOUT page -------*/
+.about-section .about-services .image {
+	height: 200px;
+}
+.image-bg-1 {
+	background-image: url(../images/about1.jpg);
+}
+.image-bg-2 {
+	background-image: url(../images/about2.jpg);
+}
+.image-bg-3 {
+	background-image: url(../images/about3.jpg);
+}
+
+
+@media screen and (min-width: 768px) {
+	.about-services {
+		justify-content: space-between;
+	}
+	.col-1-3 {
+		width: calc(33.333333% - 10px);
+	}
+}
+
+
+/*----- TEAM page -------*/
+.team-section .team-img {
+	height: 300px;
+}
+
+.team-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 20px;
+}
+
+.col {
+	width: 100%;
+}
+
+.blog-row-item {
+/*	min-height: 400px;*/
+}
+
+.blog-img {
+	height: 180px;
+}
+
+.blog-content {
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 180px;
+	padding: 20px 10px 10px;
+	background-color: #fff;
+}
+
+@media screen and (min-width: 580px) {
+	.col-1-2 {
+		width: calc(50% - 10px);
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.col-1-4 {
+		width: calc(25% - 10px)!important;
+	}
+}
